@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PRESENTATIONS</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<integer>1</integer>
+			<key>title</key>
+			<string>What is Truth?</string>
+			<key>title_alignment</key>
+			<integer>0</integer>
+			<key>cross_background_image</key>
+			<string>truth.png</string>
+			<key>blob_background_image</key>
+			<string>truth_blob.png</string>
+			<key>blob_background_image_content_mode</key>
+			<integer>4</integer>
+			<key>cross_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>60</integer>
+				<key>y</key>
+				<string>50</string>
+				<key>width</key>
+				<string>28</string>
+				<key>height</key>
+				<string>28</string>
+			</dict>
+			<key>cross_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>34</integer>
+				<key>y</key>
+				<string>23</string>
+				<key>width</key>
+				<string>81</string>
+				<key>height</key>
+				<string>82</string>
+			</dict>
+			<key>label_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>95</integer>
+				<key>y</key>
+				<string>44</string>
+				<key>width</key>
+				<string>178</string>
+				<key>height</key>
+				<string>40</string>
+			</dict>
+			<key>blob_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<string>-27</string>
+				<key>width</key>
+				<string>130</string>
+				<key>height</key>
+				<string>157</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>2</integer>
+			<key>title</key>
+			<string>Authenticity of the Bible</string>
+			<key>title_alignment</key>
+			<integer>2</integer>
+			<key>cross_background_image</key>
+			<string>orange.png</string>
+			<key>blob_background_image</key>
+			<string>authenticity_blob.png</string>
+			<key>blob_background_image_content_mode</key>
+			<integer>4</integer>
+			<key>cross_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>233</integer>
+				<key>y</key>
+				<string>36</string>
+				<key>width</key>
+				<string>28</string>
+				<key>height</key>
+				<string>28</string>
+			</dict>
+			<key>cross_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>207</integer>
+				<key>y</key>
+				<string>9</string>
+				<key>width</key>
+				<string>81</string>
+				<key>height</key>
+				<string>82</string>
+			</dict>
+			<key>label_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>73</integer>
+				<key>y</key>
+				<string>9</string>
+				<key>width</key>
+				<string>153</string>
+				<key>height</key>
+				<string>80</string>
+			</dict>
+			<key>blob_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>137</integer>
+				<key>y</key>
+				<string>-58</string>
+				<key>width</key>
+				<string>212</string>
+				<key>height</key>
+				<string>216</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>3</integer>
+			<key>title</key>
+			<string>Controversial bible accounts</string>
+			<key>title_alignment</key>
+			<integer>0</integer>
+			<key>cross_background_image</key>
+			<string>light_green.png</string>
+			<key>blob_background_image</key>
+			<string>truth_blob.png</string>
+			<key>blob_background_image_content_mode</key>
+			<integer>4</integer>
+			<key>cross_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>93</integer>
+				<key>y</key>
+				<string>63</string>
+				<key>width</key>
+				<string>28</string>
+				<key>height</key>
+				<string>28</string>
+			</dict>
+			<key>cross_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>67</integer>
+				<key>y</key>
+				<string>36</string>
+				<key>width</key>
+				<string>81</string>
+				<key>height</key>
+				<string>82</string>
+			</dict>
+			<key>label_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>104</integer>
+				<key>y</key>
+				<string>-9</string>
+				<key>width</key>
+				<string>184</string>
+				<key>height</key>
+				<string>80</string>
+			</dict>
+			<key>blob_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>18</integer>
+				<key>y</key>
+				<string>0</string>
+				<key>width</key>
+				<string>100</string>
+				<key>height</key>
+				<string>100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>4</integer>
+			<key>title</key>
+			<string>God and the times</string>
+			<key>title_alignment</key>
+			<integer>0</integer>
+			<key>cross_background_image</key>
+			<string>red.png</string>
+			<key>blob_background_image</key>
+			<string>truth_blob.png</string>
+			<key>blob_background_image_content_mode</key>
+			<integer>4</integer>
+			<key>cross_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>165</integer>
+				<key>y</key>
+				<string>6</string>
+				<key>width</key>
+				<string>28</string>
+				<key>height</key>
+				<string>28</string>
+			</dict>
+			<key>cross_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>139</integer>
+				<key>y</key>
+				<string>-21</string>
+				<key>width</key>
+				<string>81</string>
+				<key>height</key>
+				<string>82</string>
+			</dict>
+			<key>label_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>167</integer>
+				<key>y</key>
+				<string>25</string>
+				<key>width</key>
+				<string>133</string>
+				<key>height</key>
+				<string>80</string>
+			</dict>
+			<key>blob_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>18</integer>
+				<key>y</key>
+				<string>0</string>
+				<key>width</key>
+				<string>100</string>
+				<key>height</key>
+				<string>100</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>id</key>
+			<integer>5</integer>
+			<key>title</key>
+			<string>What time is it?</string>
+			<key>title_alignment</key>
+			<integer>2</integer>
+			<key>cross_background_image</key>
+			<string>turquoise_green.png</string>
+			<key>blob_background_image</key>
+			<string>truth_blob.png</string>
+			<key>blob_background_image_content_mode</key>
+			<integer>4</integer>
+			<key>cross_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>166</integer>
+				<key>y</key>
+				<string>37</string>
+				<key>width</key>
+				<string>28</string>
+				<key>height</key>
+				<string>28</string>
+			</dict>
+			<key>cross_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>140</integer>
+				<key>y</key>
+				<string>10</string>
+				<key>width</key>
+				<string>81</string>
+				<key>height</key>
+				<string>82</string>
+			</dict>
+			<key>label_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>26</integer>
+				<key>y</key>
+				<string>10</string>
+				<key>width</key>
+				<string>128</string>
+				<key>height</key>
+				<string>80</string>
+			</dict>
+			<key>blob_background_frame</key>
+			<dict>
+				<key>x</key>
+				<integer>18</integer>
+				<key>y</key>
+				<string>0</string>
+				<key>width</key>
+				<string>100</string>
+				<key>height</key>
+				<string>100</string>
+			</dict>
+		</dict>
+	</array>
+	<key>PRESENTATIONS_CONTENT</key>
+	<array>
+		<dict>
+			<key>PRESENTATION_ID</key>
+			<string>1</string>
+			<key>CONTENT</key>
+			<array>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>0</string>
+					<key>CONTENT_TITLE</key>
+					<string>What is Truth?</string>
+					<key>CONTENT_BODY</key>
+					<string>You don&apos;t choose the truth. Truth exists independently of any of us.
+ 
+Truth is what is left after all the “facts” have come and gone... 
+
+Truth is eternal, it&apos;s not a theory. It never changes. It doesn&apos;t have to.
+
+Truth can be discovered by you, but you didn&apos;t invent it. It was there all the time. 
+
+Truth comes to you.
+
+Truth by it&apos;s nature, can and must be accepted or rejected.
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>1</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Bible</string>
+					<key>CONTENT_BODY</key>
+					<string>Jesus said in John 17:17, “Sanctify them through your truth; your Word is truth.”
+
+But is it...?
+
+Has it been corrupted over time?
+
+Has the “Truth” been lost in translation between the languages?
+
+How do we know the Bible we have today is no different than the original writers intended? 
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>2</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Bible</string>
+					<key>CONTENT_BODY</key>
+					<string>The Bible came by revelation from God to mankind.
+
+The Bible was written by over 40 authors over a period of approximately 1500-1800 years, between 1700BC and 100AD.
+
+The Old Testament was completed about 400BC in the Hebrew language; some of it was written in Aramaic.
+
+All of the New Testament was written in Greek during the 1st Century AD.
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>3</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Dead Sea Scrolls</string>
+					<key>CONTENT_BODY</key>
+					<string>Before 1947, the oldest complete copy of the Hebrew Old Testament was 1008AD. Other portions dated to around 800AD.
+
+Between 1947 and 1956, the Dead Sea Scrolls were found in 11 caves in Qumran.
+
+They date from approximately 250BC to about 65AD and became the oldest copies of the Old Testament ever found.
+
+Mostly parchments, they consisted of about 950 scrolls (documents) and 100,000 fragments.
+
+Among these were 972 Hebrew Bible texts from every book of the  Old Testament except Esther.
+</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>PRESENTATION_ID</key>
+			<string>2</string>
+			<key>CONTENT</key>
+			<array>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>0</string>
+					<key>CONTENT_TITLE</key>
+					<string>What is Truth?</string>
+					<key>CONTENT_BODY</key>
+					<string>You don&apos;t choose the truth. Truth exists independently of any of us.
+ 
+Truth is what is left after all the “facts” have come and gone... 
+
+Truth is eternal, it&apos;s not a theory. It never changes. It doesn&apos;t have to.
+
+Truth can be discovered by you, but you didn&apos;t invent it. It was there all the time. 
+
+Truth comes to you.
+
+Truth by it&apos;s nature, can and must be accepted or rejected.
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>1</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Bible</string>
+					<key>CONTENT_BODY</key>
+					<string>Jesus said in John 17:17, “Sanctify them through your truth; your Word is truth.”
+
+But is it...?
+
+Has it been corrupted over time?
+
+Has the “Truth” been lost in translation between the languages?
+
+How do we know the Bible we have today is no different than the original writers intended? 
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>2</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Bible</string>
+					<key>CONTENT_BODY</key>
+					<string>The Bible came by revelation from God to mankind.
+
+The Bible was written by over 40 authors over a period of approximately 1500-1800 years, between 1700BC and 100AD.
+
+The Old Testament was completed about 400BC in the Hebrew language; some of it was written in Aramaic.
+
+All of the New Testament was written in Greek during the 1st Century AD.
+</string>
+				</dict>
+				<dict>
+					<key>CONTENT_ID</key>
+					<string>3</string>
+					<key>CONTENT_TITLE</key>
+					<string>The Dead Sea Scrolls</string>
+					<key>CONTENT_BODY</key>
+					<string>Before 1947, the oldest complete copy of the Hebrew Old Testament was 1008AD. Other portions dated to around 800AD.
+
+Between 1947 and 1956, the Dead Sea Scrolls were found in 11 caves in Qumran.
+
+They date from approximately 250BC to about 65AD and became the oldest copies of the Old Testament ever found.
+
+Mostly parchments, they consisted of about 950 scrolls (documents) and 100,000 fragments.
+
+Among these were 972 Hebrew Bible texts from every book of the  Old Testament except Esther.
+</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

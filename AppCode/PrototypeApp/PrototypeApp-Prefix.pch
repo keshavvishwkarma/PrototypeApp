@@ -1,0 +1,94 @@
+//
+// Prefix header for all source files of the 'PrototypeApp' target in the 'PrototypeApp' project
+//
+
+#import <Availability.h>
+
+#define RAISE_UNIMPLEMENTED_EXCEPTION(function, lineNumber) [NSException raise:NSInternalInconsistencyException format:@"Class: %@ Function: %s at Line: %d", [self class], function, lineNumber];
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+/*************  FeedAPI Import    ******************/
+//#include    "FeedAPI-Prefix.h"
+
+/*************  Development Import  ****************/
+//    #include    "Fleadh-Dev-Prefix.h"
+
+/*************  Apple Framework Import  *************/
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <QuartzCore/QuartzCore.h>
+#import <MessageUI/MessageUI.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+
+/*************  CocoaControlsImport    *****************/
+
+#define MR_ENABLE_ACTIVE_RECORD_LOGGING 0
+#define MR_SHORTHAND
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+
+/****   Cocoa Lumberjack Imports *******/
+
+#import <CocoaLumberjack/DDLog.h>
+#import <CocoaLumberjack/DDASLLogger.h>
+#import <CocoaLumberjack/DDTTYLogger.h>
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif
+
+/**************  ManagedObject Imports ******************/
+#import "Section.h"
+#import "Content.h"
+#import "Chapter.h"
+
+/**************  Prototype App Imports ******************/
+
+#import "BaseViewController.h"
+
+#import "UINavigationController+AutoRotation.h"
+
+#import "UIColor+MoreColors.h"
+
+#import "UIImage+MoreFunction.h"
+#import "UILabel+MultilineAutoSize.h"
+
+
+#import "Utils.h"
+#import "KGModal.h"
+#import "TableViewUtils.h"
+#import "StaticDataUtils.h"
+#import "DeviceUtils.h"
+#import "StringUtils.h"
+
+#import "NSString+HTML.h"
+
+//  Category Imports
+#import "TableViewParam.h"
+#import "SystemParam.h"
+#import "StoryboardParam.h"
+#import "ImagesParam.h"
+#import "GalleryParam.h"
+
+//  TableView Imports
+#import "UITableViewCell+BaseTableViewCell.h"
+
+//  JASidePanel Imports
+#import "JASidePanelController.h"
+#import "UIViewController+JASidePanel.h"
+
+//  Imports
+#import "ChapterViewController.h"
+#import "ContentViewController.h"
+#import "PageViewController.h"
+
+#endif

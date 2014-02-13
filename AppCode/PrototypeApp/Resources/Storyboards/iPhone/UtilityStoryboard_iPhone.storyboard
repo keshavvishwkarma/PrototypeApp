@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="FlA-86-HNs">
+    <dependencies>
+        <deployment version="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller i Phone-->
+        <scene sceneID="m2N-T3-S0O">
+            <objects>
+                <viewController storyboardIdentifier="WebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="niD-aV-ere" customClass="WebViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8es-J7-tkO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XSe-Km-knd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <items>
+                                    <barButtonItem image="barbutton_close.png" style="plain" id="bVj-lD-rf9">
+                                        <connections>
+                                            <action selector="dismissCurrentView:" destination="niD-aV-ere" id="Gdy-v3-P4a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yLd-H0-Qbm"/>
+                                    <barButtonItem style="plain" id="aaq-n7-Dvd">
+                                        <view key="customView" contentMode="scaleToFill" id="JHw-hx-yax">
+                                            <rect key="frame" x="60" y="0.0" width="200" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uyL-iy-hsV" customClass="OHAttributedLabel">
+                                                    <rect key="frame" x="0.0" y="3" width="200" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lMS-Rt-XG2">
+                                                    <rect key="frame" x="0.0" y="20" width="200" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cu3-Zs-bth"/>
+                                    <barButtonItem style="plain" systemItem="action" id="W00-Mg-W6h">
+                                        <connections>
+                                            <action selector="showShareThisOptions:" destination="niD-aV-ere" id="c1E-7x-Vvf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.5411764979" green="0.67450982329999998" blue="0.85490202900000001" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" id="nG5-n4-7Wl">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="niD-aV-ere" id="nKv-tp-kxb"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="baseWebView" destination="nG5-n4-7Wl" id="EKB-mW-Y25"/>
+                        <outlet property="statusLabel" destination="uyL-iy-hsV" id="8Aj-PZ-SbY"/>
+                        <outlet property="toolbar" destination="XSe-Km-knd" id="83h-8o-ECh"/>
+                        <outlet property="urlLabel" destination="lMS-Rt-XG2" id="za4-sX-CoV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMw-Xx-1M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="-120"/>
+        </scene>
+        <!--Photo Upload View Controller i Phone-->
+        <scene sceneID="N2f-Dz-n31">
+            <objects>
+                <viewController storyboardIdentifier="PhotoUploadView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YMC-b0-djJ" customClass="PhotoUploadViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tbx-bp-Kmz">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar hidden="YES" contentMode="scaleToFill" id="5Wz-56-v3Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Camera Roll" id="QDS-4u-2B4">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="b0b-u9-oCS"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="qGE-TS-8zO">
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="x97-4U-P9b"/>
+                                    <barButtonItem systemItem="camera" id="X1R-cF-xYN"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Dxw-Ka-z2P"/>
+                                    <barButtonItem title="Upload" id="A4r-eD-zEA"/>
+                                </items>
+                                <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <view contentMode="scaleToFill" id="eSl-Vv-v8R" userLabel="CenterView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="eSl-Vv-v8R" id="XGp-tV-mug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktx-3u-gpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="-119"/>
+        </scene>
+        <!--Splash Screen View Controller i Phone-->
+        <scene sceneID="Tts-0c-MiK">
+            <objects>
+                <viewController id="FlA-86-HNs" customClass="SplashScreenViewController_iPhone" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOI-Dj-6n0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Hhe-1s-Hvn" userLabel="SplashBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="splashscreen_bottom_portrait_ipad.png" id="F4t-l0-Kie" userLabel="SplashBottomImage">
+                                <rect key="frame" x="0.0" y="548" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="splashscreen_top_portrait_ipad.png" id="CZc-14-gct" userLabel="SplashTopImage">
+                                <rect key="frame" x="0.0" y="-547" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="AJf-qM-ZeJ">
+                                <rect key="frame" x="152" y="460" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94a-OZ-woE" customClass="OHAttributedLabel">
+                                <rect key="frame" x="81" y="424" width="158" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AJf-qM-ZeJ" id="dgW-Oi-74y"/>
+                        <outlet property="backgroundImageView" destination="Hhe-1s-Hvn" id="xIR-c4-5M3"/>
+                        <outlet property="splashScreenBottomImage" destination="F4t-l0-Kie" id="5Ui-wW-2qW"/>
+                        <outlet property="splashScreenTopImage" destination="CZc-14-gct" id="UDv-1w-Vm3"/>
+                        <outlet property="statusLabel" destination="94a-OZ-woE" id="p7X-xM-hhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ak7-Oz-wcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="-120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barbutton_close.png" width="20" height="20"/>
+        <image name="splashscreen_bottom_portrait_ipad.png" width="768" height="1024"/>
+        <image name="splashscreen_top_portrait_ipad.png" width="768" height="1024"/>
+    </resources>
+    <classes>
+        <class className="BaseViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BaseViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="processViewRequiredForButton:"/>
+                <relationship kind="outlet" name="animatedImagesView" candidateClass="JSAnimatedImagesView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="JSAnimatedImagesView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JSAnimatedImagesView.h"/>
+        </class>
+        <class className="OHAttributedLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OHAttributedLabel.h"/>
+            <relationships>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+        <class className="PhotoUploadViewController" superclassName="BaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoUploadViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="PhotoUploadViewController_iPhone" superclassName="PhotoUploadViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoUploadViewController_iPhone.h"/>
+        </class>
+        <class className="SplashScreenViewController" superclassName="BaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashScreenViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="splashScreenBottomImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="splashScreenTopImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SplashScreenViewController_iPhone" superclassName="SplashScreenViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashScreenViewController_iPhone.h"/>
+        </class>
+        <class className="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissCurrentView:"/>
+                <relationship kind="action" name="presentActivityView:"/>
+                <relationship kind="action" name="processActivityButton:"/>
+            </relationships>
+        </class>
+        <class className="WebViewController" superclassName="BaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="actionBarButtonItem" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="backButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="baseWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="dismissViewButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="forwardButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="refreshButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="OHAttributedLabel"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="urlLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WebViewController_iPhone" superclassName="WebViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController_iPhone.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

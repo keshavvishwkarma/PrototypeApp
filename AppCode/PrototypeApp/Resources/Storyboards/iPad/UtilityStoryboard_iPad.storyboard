@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="voL-4r-AmO">
+    <dependencies>
+        <deployment version="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller i Pad-->
+        <scene sceneID="w5O-BG-Pcl">
+            <objects>
+                <viewController storyboardIdentifier="WebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FWI-Pt-e3z" customClass="WebViewController_iPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYp-dl-fpb">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6r2-cc-MEM">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <items>
+                                    <barButtonItem image="barbutton_close.png" style="plain" id="kZM-ln-sHt">
+                                        <connections>
+                                            <action selector="dismissCurrentView:" destination="FWI-Pt-e3z" id="G8y-W8-rg1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="uGr-lh-s6a"/>
+                                    <barButtonItem image="back_toolbar_iphone.png" style="plain" id="CLC-0g-IvQ">
+                                        <connections>
+                                            <action selector="goBack" destination="t0J-Rv-gjT" id="0my-0T-ZGe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Ncb-eS-noV"/>
+                                    <barButtonItem image="forward_toolbar_iphone.png" style="plain" id="ddx-CS-ADR">
+                                        <connections>
+                                            <action selector="goForward" destination="t0J-Rv-gjT" id="hcJ-lB-xLX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gl0-Pt-A4V"/>
+                                    <barButtonItem style="plain" id="zuv-fb-iKx">
+                                        <view key="customView" contentMode="scaleToFill" id="uNv-5a-v3Y">
+                                            <rect key="frame" x="234" y="0.0" width="300" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading..." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rQY-le-Q3M" customClass="OHAttributedLabel">
+                                                    <rect key="frame" x="0.0" y="3" width="300" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="http://www.google.co.uk/" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vNa-Uz-i2a">
+                                                    <rect key="frame" x="0.0" y="20" width="300" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dCj-ja-1Gn"/>
+                                    <barButtonItem style="plain" systemItem="refresh" id="am2-VL-Vq2">
+                                        <connections>
+                                            <action selector="reload" destination="t0J-Rv-gjT" id="KMl-sp-ugf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Z2i-3x-Ex5"/>
+                                    <barButtonItem style="plain" systemItem="action" id="KUb-EX-2fh">
+                                        <connections>
+                                            <action selector="showShareThisOptions:" destination="FWI-Pt-e3z" id="tsz-zF-hqQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.5411764979" green="0.67450982329999998" blue="0.85490202900000001" alpha="0.69999999999999996" colorSpace="deviceRGB"/>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" id="t0J-Rv-gjT">
+                                <rect key="frame" x="0.0" y="44" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FWI-Pt-e3z" id="VKb-xX-5KO"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="CLC-0g-IvQ" id="KUy-hh-RmA"/>
+                        <outlet property="baseWebView" destination="t0J-Rv-gjT" id="TrS-Qu-VWV"/>
+                        <outlet property="forwardButton" destination="ddx-CS-ADR" id="JfQ-3h-yfB"/>
+                        <outlet property="refreshButton" destination="am2-VL-Vq2" id="ENP-Wk-spc"/>
+                        <outlet property="statusLabel" destination="rQY-le-Q3M" id="tEZ-SG-LQh"/>
+                        <outlet property="toolbar" destination="6r2-cc-MEM" id="rvy-H1-iFM"/>
+                        <outlet property="urlLabel" destination="vNa-Uz-i2a" id="gzv-Bm-tfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waf-J5-4xC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-457" y="-356"/>
+        </scene>
+        <!--Splash Screen View Controller i Pad-->
+        <scene sceneID="gjm-o5-bJw">
+            <objects>
+                <viewController id="voL-4r-AmO" customClass="SplashScreenViewController_iPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yd8-W5-AaO">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" id="vCO-fk-VL0" userLabel="SplashBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="splashscreen_bottom_portrait_ipad.png" id="EsJ-bA-fXG" userLabel="SplashBottomImage">
+                                <rect key="frame" x="0.0" y="1004" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="splashscreen_top_portrait_ipad.png" id="8DR-Of-3ep" userLabel="SplashTopImage">
+                                <rect key="frame" x="0.0" y="-1003" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="07J-HU-PWg">
+                                <rect key="frame" x="195" y="885" width="379" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="Syl-Fi-Ded">
+                                <rect key="frame" x="376" y="865" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Syl-Fi-Ded" id="A9Q-MB-Rlg"/>
+                        <outlet property="backgroundImageView" destination="vCO-fk-VL0" id="O5n-fV-HyS"/>
+                        <outlet property="splashScreenBottomImage" destination="EsJ-bA-fXG" id="eej-rt-VV7"/>
+                        <outlet property="splashScreenTopImage" destination="8DR-Of-3ep" id="4TG-RU-UHT"/>
+                        <outlet property="statusLabel" destination="07J-HU-PWg" id="ccM-0o-4vd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzt-iv-yCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="-356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_toolbar_iphone.png" width="20" height="20"/>
+        <image name="barbutton_close.png" width="20" height="20"/>
+        <image name="forward_toolbar_iphone.png" width="20" height="20"/>
+        <image name="splashscreen_bottom_portrait_ipad.png" width="768" height="1024"/>
+        <image name="splashscreen_top_portrait_ipad.png" width="768" height="1024"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
